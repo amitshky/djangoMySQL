@@ -12,6 +12,18 @@ virtualenv env
 ./env/Scripts/activate
 ```
 
+* Create a `config.ini` file in the root directory and add the following (with your own configuration) in the file
+```
+[mysql]
+username = <your_db_username>
+password = <your_db_password>
+hostname = <your_db_hostname>
+port = <your_db_port>
+db_name = <your_db_name>
+[django]
+secret_key = <your_django_secret_key>
+```
+
 (for commands below make sure the env is activated)
 
 * Install requirements
