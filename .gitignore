@@ -1,4 +1,6 @@
 *.code-workspace
+config.ini
+env/
 
 ### Python gitignore ###
 # Byte-compiled / optimized / DLL files
