@@ -1,0 +1,25 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "makemigrations",
+			"type": "shell",
+			"command": "./env/Scripts/python.exe",
+			"args": [
+				"app/manage.py",
+				"makemigrations",
+			],
+		},
+		{
+			"label": "migrate",
+			"type": "shell",
+			"command": "./env/Scripts/python.exe",
+			"args": [
+				"app/manage.py",
+				"migrate",
+			],
+		},
+	],
+	"cwd": "${workspaceFolder}",
+	"problemMatcher": [],
+}
