@@ -54,6 +54,7 @@ def deleteProduct(req: Request, pk: int):
 	except Products.DoesNotExist:
 		return Response({ 'error': 'This item doesn\'t exist.' })
 
+	
 	queryset.delete()
 	return Response({'message': 'Product deleted successfully!'})
 

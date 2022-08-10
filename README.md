@@ -12,7 +12,7 @@ virtualenv env
 ./env/Scripts/activate
 ```
 
-* Create a `config.ini` file in the root directory and add the following (with your own configuration) in the file
+* Create a `config.ini` file in the root directory and add the following (with your own configuration) in the file. (NOTE: the `secret_key` needs to be base64 encoded)
 ```
 [mysql]
 username = <your_db_username>

@@ -17,4 +17,5 @@ from django.urls import path, include
 
 urlpatterns = [
     path('api/products/', include('products.urls')),
+    path('api/comments/', include('comments.urls')),
 ]

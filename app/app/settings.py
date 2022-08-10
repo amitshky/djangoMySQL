@@ -37,10 +37,15 @@ secret_key = base64.b64decode(config['django']['secret_key'])
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = secret_key
 
+# TODO: change this
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+# TODO: add allowed hosts
+ALLOWED_HOSTS = [
+    'localhost',
+    '127.0.0.1',
+]
 
 
 # Application definition
@@ -54,6 +59,7 @@ INSTALLED_APPS = [
     'rest_framework',
     'api',
     'products',
+    'comments',
 ]
 
 MIDDLEWARE = [
